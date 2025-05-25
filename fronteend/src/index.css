@@ -1,7 +1,11 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
+  color: black;
   background-color: #f4f4f4;
+  background-image: url("https://img.freepik.com/premium-vector/abstract-doodle-seamless-pattern-hand-drawn-fast-food-elements-vector-design-style-background_324137-7981.jpg?semt=ais_hybrid&w=740");
+  background-blend-mode: color-burn;
+ 
 }
 
 .app {
@@ -11,7 +15,8 @@ body {
 }
 
 .navbar {
-  background: #007bff;
+  background: rgb(139, 189, 39);
+  color: black;
   padding: 15px;
   display: flex;
   justify-content: space-between;
@@ -19,7 +24,7 @@ body {
 }
 
 .nav-logo {
-  color: #fff;
+  color: black;
   font-size: 1.5rem;
   font-weight: bold;
 }
@@ -37,7 +42,7 @@ body {
 }
 
 .nav-links a {
-  color: #fff;
+  color: black;
   text-decoration: none;
   font-size: 1rem;
 }
@@ -49,7 +54,7 @@ body {
 .nav-button {
   background: none;
   border: none;
-  color: #fff;
+  color: black;
   font-size: 1rem;
   cursor: pointer;
 }
@@ -112,8 +117,8 @@ body {
 .form-group input:focus,
 .form-group select:focus {
   outline: none;
-  border-color: #007bff;
-  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+  border-color: #5cb85c;
+  box-shadow: 0 0 5px rgba(23, 190, 81, 0.3);
 }
 
 .form-group button {
@@ -139,7 +144,7 @@ body {
 button {
   width: 100%;
   padding: 12px;
-  background: #007bff;
+  background:#5cb85c;
   border: none;
   border-radius: 4px;
   color: #fff;
@@ -149,7 +154,7 @@ button {
 }
 
 button:hover {
-  background: #0056b3;
+  background: #5cb85c;
 }
 
 button:disabled {
@@ -164,7 +169,7 @@ button:disabled {
 }
 
 .link a {
-  color: #007bff;
+  color:#5cb85c;
   text-decoration: none;
 }
 

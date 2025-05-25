@@ -168,23 +168,7 @@ function InventoryDisplay() {
                 <p style={{ margin: '5px 0' }}>
                   <strong>Last Updated:</strong> {item.lastUpdated ? new Date(item.lastUpdated).toLocaleString() : 'Unknown'}
                 </p>
-                {user && user.role === 'staff' && (
-                  <button
-                    onClick={() => handleDeleteItem(item._id)}
-                    style={{
-                      width: '100%',
-                      padding: '8px',
-                      backgroundColor: '#dc3545',
-                      color: '#fff',
-                      border: 'none',
-                      borderRadius: '5px',
-                      cursor: 'pointer',
-                      marginTop: '10px',
-                    }}
-                  >
-                    Delete
-                  </button>
-                )}
+               
               </div>
             ))
           ) : (

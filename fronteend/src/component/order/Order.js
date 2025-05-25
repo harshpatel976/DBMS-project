@@ -38,7 +38,7 @@ function Orders() {
 
       {!loading && orders.length === 0 && <p>No orders found.</p>}
 
-      <div style={{ display: 'flex', flexWrap: 'wrap', gap: '15px' }}>
+      <div style={{ display: 'flex', flexWrap: 'wrap', gap: '15px'}} className='orderpage'>
         {orders.map((order) => (
           <div
             key={order._id}
@@ -47,7 +47,7 @@ function Orders() {
               padding: '15px',
               borderRadius: '8px',
               width: '300px',
-              backgroundColor: '#f9f9f9',
+              backgroundColor: "#FFFFFF",
             }}
           >
             <h4>Order ID: {order._id}</h4>

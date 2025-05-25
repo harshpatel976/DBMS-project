@@ -61,8 +61,9 @@ function StaffOrders() {
   };
 
   return (
-    <div style={{ padding: '20px' }}>
-      <h2>Staff Orders</h2>
+    <> <h2 style={{ textAlign:"center"}}>Staff Orders</h2>
+    <div style={{ padding: '20px' , display:"flex", flexWrap:'wrap', justifyContent:'space-between' }}>
+    
       {error && <p style={{ color: 'red' }}>{error}</p>}
       {loading ? (
         <p>Loading...</p>
@@ -72,7 +73,7 @@ function StaffOrders() {
         orders.map((order) => (
           <div
             key={order._id}
-            style={{ border: '1px solid #ccc', padding: '15px', margin: '10px 0' }}
+            style={{ border: '2px solid #ccc', padding: '15px', margin: '10px 0' , backgroundColor:"#FFFFFF", borderRadius:"12px" , width:"400px"}}
           >
             <h4>Order #{order._id}</h4>
             <p><strong>User:</strong> {order.userId?.username || 'Unknown'}</p>
@@ -102,6 +103,7 @@ function StaffOrders() {
         ))
       )}
     </div>
+    </>
   );
 }
 

@@ -10,7 +10,7 @@ const menuItemSchema = new mongoose.Schema({
   inventoryItems: [
     {
       inventoryId: { type: mongoose.Schema.Types.ObjectId, ref: 'Inventory', required: true },
-      quantityUsed: { type: Number, required: true }, // Quantity of this inventory item used per menu item
+      quantityUsed: { type: Number, required: true },
     },
   ],
   createdAt: { type: Date, default: Date.now },
